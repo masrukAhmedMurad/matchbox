@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchBox</title>
+    <link rel="stylesheet" href="styles.css">    
+<!-- Add this in the head section of your HTML file -->
+<!-- Add this in the head section of your HTML file -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="icon" type="image/png" href="logo.png">
+
+
+<style>
+
+  
+
+
+
+
+
+    .flex-con{
+        display: flex;
+       
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       
+    }
+
+    .flex-con p{
+        margin-top:0px;
+        width: 60%;
+    }
+
+
+
+
+    
+   section .container{
+        margin-bottom: 80px;
+    }
+
+
+
+
+    #intro, #feature{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      padding: 25px;
+      margin: 50px;
+
+    }
+
+
+
+    #mid #two h6{
+        font-size: 30px;
+        font-weight: 600;
+       
+    }
+
+    #mid #intro #two h1{
+        font-size: 65px;
+        font-weight: 600;
+       
+    }
+
+    #mid #two p{
+        font-size: 30px;
+        font-weight: 600;
+       
+    }
+
+
+
+
+
+
+    #feature .row a{
+        text-decoration: none;
+        height: 60px;
+        background-color: #8d8d8d;
+        color: black;
+        font-size: 14px;
+        border-radius: 30px;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+
+
+    #feature .row a:hover{
+        --tw-text-opacity: 1;
+color: rgb(255 255 255/var(--tw-text-opacity));
+    }
+
+
+
+    #feature a i{
+        margin: 10px;
+    }
+
+
+    #mid h6{
+        font-weight: 500;
+    }
+
+
+    #mid p{
+        font-weight: 500;
+        font-size: 18px;
+        
+    }
+
+
+
+    #mid h1{
+        font-weight: bolder;
+    }
+
+
+
+    #head-con p{
+        font-size: 20px;
+        margin: 20px;
+        
+    }
+
+    .mid-text{
+        font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+   
+        #intro, #feature{
+        
+      
+      margin: 0px;
+
+    }
+
+       
+       #one{
+        order: 1;
+       }
+
+
+
+
+       #two{
+        order: 2;
+
+
+
+
+    
+
+
+
+    }
+
+    
+  
+        section .container{
+        margin-bottom: 50px;
+    }
+       
+   
+
+
+
+    .btn-flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+    #feature .row a{
+       
+        height: 40px;
+       
+    }
+
+
+    #mid #two h6{
+        font-size: 20px;
+        font-weight: 400;
+       
+    }
+
+    #mid #intro #two h1{
+        font-size: 50px;
+        font-weight: 600;
+       
+    }
+
+    #mid #two p{
+        font-size: 20px;
+        font-weight: 500;
+       
+    }
+
+
+
+    
+    .flex-con p{
+        
+        width: 80%;
+    }
+
+}
+
+
+
+.bold-font{
+    font-weight: 500;
+}
+
+.bolder-font{
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+   
+
+  #one{
+   order: 1;
+  }
+  #two{
+   order: 2;
+}
+
+
+  
+
+
+
+}
+
+
+.btn-flex{
+    display: flex;
+   gap: 10px;
+}
+
+
+
+
+</style>
+
+
+</head>
+<body style="background-color: #191A1E">
+    <nav>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" id="icc" onclick="toggleMenu()"></i>
+        </div>
+
+        <div class="logo">
+            <a href="index.html"><img height="" width="100px" src="logo.png" alt="logo"></a>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">INVITE</a></li>
+            <li><a href="pricingg.html">PREMIUM</a></li>
+            <li><a href="commands.html">COMMANDS</a></li>
+            <li><a href="contact.html">SUPPORT</a></li>
+        </ul>
+
+        <button class="gradient-button "><a href="">Get Started</a></button>
+       
+    </nav>
+
+    <div class="horizontal-bar mt-2"></div>
+
+    <div class="container text-grey-500" id="mid">
+        <div class="container ">
+            <div class="row" id="intro">
+                <div class="col-lg-6" id="two">
+                    <h6 class="text-uppercase font-weight-bold mb-2">We Care About Quality</h6>
+                    <h1 class="text-white font-weight-bold mb-4">MATCHBOX</h1>
+                    <p class="mb-2">Your Ultimate Music Bot</p>
+                    <div class="btn-flex">
+                        <button class="gradient-button mt-2"><a href="">Invite to Server</a></button>
+                    <button class="gradient-button mt-2"><a href="#feature">Features</a></button>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="one">
+                    <img alt="logo" class="img-fluid rounded" src="l.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <div >
+    <section class="container" >
+        <div class="container mx-auto">
+            <div class="w-100 mx-auto flex-con" id="head-con">
+                <h1 class="mb-2 text-grey-500 bolder-font">
+                    <br><span class="font-inter">Take Listening experince <br> to the next level !</span>
+                </h1>
+                <p class="mb-2 text-grey-500 bold-font">
+                    Listen to your favourite music on discord with your friends! Edit the music with audio filters, custom playlists, autoplay, 24/7 and much more!
+                </p>
+                <button class="gradient-button mt-2"><a href="">Add to Server</a></button>
+            </div>
+        </div>
+    </section>
+  </div>
+    
+
+    
+   <section>
+    <div class="container w-100 mx-auto flex-con mt-4">
+        <h2 class="my-2 text-grey-500 bolder-font">
+            Why MatchBox?
+        </h2>
+        <p class="mb-2 text-grey-500 bold-font mid-text">
+            MatchBox is one of the best discord music bot that you can find and provides free features which are paid in other bots! Let's have a look into Musico's features        </p>
+       
+    </div>
+   </section>
+
+
+
+
+
+   <div class="container text-grey-500" >
+    <div class="container ">
+        <div class="row" id="feature">
+            <div class="col-lg-6" id="two">
+                
+                <h1 class="text-white font-weight-bold mb-4 bolder-font">Curious About Even More Features ?</h1>
+                <p class="mb-2 bold-font mid-text">When subscribing to one of our premium plans you'll gain access to even more awesome features which will massively improve your experience on Discord!</p>
+                
+                    <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check me-2"></i>24/7 SUPPORT & HELP
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check me-2"></i>AUDIO EFFECTS
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check me-2"></i>GLOBAL VOLUME CONTROL
+                            </a>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <a href="" class="d-flex align-items-center">
+                                <i class="fa-solid fa-circle-check me-2"></i>UNLIMITED SAVED PLAYLISTS
+                            </a>
+                        </div>
+                    </div>
+                
+                
+               <div class="btn-flex">
+                <button class="gradient-button mt-4"><a href="">Check Out Premium</a></button>
+               </div>
+                
+            </div>
+            <div class="col-lg-6" id="one">
+                <img alt="logo" class="img-fluid rounded" src="ll.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+   
+    
+
+
+    <!--  Footer start -->
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+
+                    <h5 class="theme-color">About Us</h5>
+                    <div class="items-center">  <div class="logo">
+                        <a href="index.html"><img height="" width="100px" src="logo.png" alt="Chain App Dev"></a>
+                    </div>
+                     <p>We Care About Music Quality. <br>Your Ultimate Music Bot</p></div>  
+
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h5 class="theme-color">Rules</h5>
+                    <ul>
+                        <li><a href="terms_of_services.html">Service Terms</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="refund_policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6">            
+                    <h5 class="theme-color">Support</h5>
+                    <ul>
+                        <li><a href="#">Supports</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Horizontal bar -->
+        <div class="horizontal-bar"></div>
+
+
+        <!-- Copyright claim -->
+        <div class="copyright">
+            &copy;  Copyright 2024 Matchbox All Rights Reserved.
+        </div>
+    </footer>
+
+
+<!--  Footer end -->
+
+
+
+
+    <script>
+
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+
+            var myElement = document.getElementById("icc");
+            var element = document.getElementById('mid');
+
+
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+                myElement.classList.remove("fa-bars");  // Remove the original class
+                myElement.classList.add("fa-x"); 
+                // Change the top margin to 20 pixels
+                element.style.marginTop = '200px';
+
+            }
+            else{
+
+                menuList.style.maxHeight = "0px";
+                myElement.classList.remove("fa-x");  // Remove the original class
+                myElement.classList.add("fa-bars"); 
+                element.style.marginTop = '0px';
+
+            }
+
+        
+        }
+           
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</body>
+</html>

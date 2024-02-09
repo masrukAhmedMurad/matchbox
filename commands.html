@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commands</title>
+    <link rel="stylesheet" href="styles.css">    
+<!-- Add this in the head section of your HTML file -->
+<!-- Add this in the head section of your HTML file -->
+<link rel="icon" type="image/png" href="logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+<style>
+
+
+    #mid{
+        margin-top: 30px;
+    }
+
+
+    .nav-tabs .nav-link {
+        padding: 8px;
+        border: none; /* Remove border */
+        background-color: transparent; /* Remove background color */
+        text-decoration: none; /* Remove default underline */
+        /* Set default text color */
+        transition: color 0.3s ease-in-out; /* Smooth transition for color */
+        --tw-text-opacity: 1;
+    color: rgb(107 114 128/var(--tw-text-opacity));
+    }
+
+
+
+
+    .nav-tabs .nav-link:hover,
+    .nav-tabs .nav-link.active{
+        color:#499bae ; /* Change color on hover and active */
+        background-color: transparent; /* Background color on hover */
+        border: none;
+        border-bottom: 2px solid #499bae;
+        
+    }
+
+ 
+    .nav-tabs .nav-link.active {
+        
+        font-weight: bold;
+    }
+
+
+
+
+
+    .tab-content {
+        margin-top: 20px;
+    }
+
+
+    .tab-pane {
+        display: none;
+    }
+
+
+
+
+    .search-input,.search-input:focus {
+        margin-bottom: 10px;
+        --tw-text-opacity: 1;
+    color: rgb(250 250 249/var(--tw-text-opacity));
+        --tw-bg-opacity: 1;
+    background-color: rgb(38 38 38/var(--tw-bg-opacity));
+    border-radius: 30px;
+    height:35px;
+    margin-top: 5px;
+   
+    }
+
+
+
+    .search-input::placeholder{
+       color: #515563;
+    }
+
+
+
+
+    .nav-tabs {
+        font-size: 16px;
+        display: flex;
+    }
+
+
+    .nav-tabs .nav-item {
+        margin-right: 10px;
+    }
+
+
+
+    .nav-tabs .nav-link {
+        padding: 8px;
+    }
+
+    
+
+
+    .tab-content {
+        margin-top: 30px;
+      
+
+    }
+
+
+    .tab-pane {
+        display: none;
+    }
+
+
+    .tab-pane.active {
+        display: block;
+    }
+
+
+
+
+    .nav-tabs{
+
+        border-bottom: 1px solid #499bae ;
+    }
+
+  
+
+
+    
+
+
+    .element {
+        display: flex;
+        align-items: center;
+        --tw-bg-opacity: 1;
+        background-color: rgb(27 28 32/var(--tw-bg-opacity));
+        padding: 20px 20px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        transition: outline 0.10s;
+       
+    }
+
+   
+
+    .element h4, .element p {
+        margin: 0;
+        cursor: pointer;
+    }
+
+
+    .element h4 {
+        font-weight: 700;
+        
+    }
+
+
+    .element p {
+
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175/var(--tw-text-opacity));
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    }
+
+
+    .element i {
+        font-size: 25px; 
+        margin-right: 30px;
+        color: #515563;
+    }
+
+
+    .element:hover{
+        outline: 1px solid #499bae; 
+    }
+
+
+
+
+
+
+    /*mobile responsive */
+
+
+
+    @media (max-width: 768px) {
+   
+
+        .element h4{
+            font-size: 16px;
+        }
+
+        
+        .element i {
+            font-size: 20px; /* Adjust the size of the icon */
+      
+        }
+
+
+    }
+
+
+
+
+
+</style>
+
+
+
+
+</head>
+
+
+    
+    <body style="background-color: #191A1E">
+        <nav>
+    
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" id="icc" onclick="toggleMenu()"></i>
+            </div>
+    
+            <div class="logo">
+                <a href="index.html"><img height="" width="100px" src="logo.png" alt="Chain App Dev"></a>
+            </div>
+            <ul id="menuList">
+                <li class=""><a href="index.html">HOME</a></li>
+                <li><a href="">INVITE</a></li>
+                <li><a href="pricingg.html">PREMIUM</a></li>
+                <li><a href="commands.html">COMMANDS</a></li>
+                <li><a href="contact.html">SUPPORT</a></li>
+            </ul>
+    
+            <button class="gradient-button"><a href="">Get Started</a></button>
+           
+        </nav>
+
+        <div class="horizontal-bar mt-2"></div>
+
+
+
+
+        <div class="container" id="mid">
+
+            <h2 class="text-grey-500 fw-bold ">MusicoBot Commands</h2>
+            <p class="text-grey-400">Looking to explore the world of music? MatchBox is your gateway to a harmonious journey.</p>
+
+
+        </div>
+
+
+
+
+
+
+
+ <!-- Tab section -->
+
+
+        <div class="container mt-4">
+            <ul class="nav nav-tabs mr-auto ">
+                <li class="nav-item">
+                    <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all"><i class="fas fa-globe"></i> All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="music-tab" data-toggle="tab" href="#music"><i class="fas fa-music"></i> Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="filter-tab" data-toggle="tab" href="#filter"><i class="fas fa-filter"></i> Filter</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="utility-tab" data-toggle="tab" href="#utility"><i class="fas fa-list"></i> Utility</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="admin-tab" data-toggle="tab" href="#admin"><i class="fas fa-user-shield"></i> Admin</a>
+                </li>
+              
+                <li class="nav-item">
+                    <a class="nav-link" id="premium-tab" data-toggle="tab" href="#premium"><i class="fas solid fa-star-of-david"></i> Premium</a>
+                </li>
+                <li class="nav-item w-sm-mt-1">
+                    <input type="text" class="w-sm-mt-2 form-control w-fluid w-md-75 search-input" placeholder="Search Commands..." oninput="filterTabs()">
+                </li>
+                
+                
+            </ul>
+    
+ <!-- Tab section end -->
+            
+
+            
+
+
+            <!-- All tab start -->
+
+            
+            <div class="tab-content text-grey-500">
+                <div class="tab-pane active" id="all">
+
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>8d</h4>
+                                <p>Enables or disables the 8D filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>bassboost</h4>
+                                <p>Enables or disables the BASSBOOST filter</p>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>china</h4>
+                                <p>Enables or disables the china filter</p>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>chipmunk</h4>
+                                <p>Enables or disables the chipmunk filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>clearfilter</h4>
+                                <p>Clear All filters</p>
+                            </div>
+                        </div>
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>darthvader</h4>
+                                <p>Enables or disables the darthvader filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>karaoke</h4>
+                                <p>Enables or disables the karaoke filter</p>
+                            </div>
+                        </div>
+    
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>nightcore</h4>
+                                <p>Enables or disables the nightcore filter</p>
+                            </div>
+                        </div>
+    
+    
+                
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>party</h4>
+                                <p>Enables or disables the party filter</p>
+                            </div>
+                        </div>
+    
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>pitch</h4>
+                                <p>Enables or disables the pitch filter</p>
+                            </div>
+                        </div>
+    
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>pop</h4>
+                                <p>Enables or disables the pop filter</p>
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>rate</h4>
+                                <p>Enables or disables the rate filter</p>
+                            </div>
+                        </div>
+    
+    
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>slowmo</h4>
+                                <p>Enables or disables the slowmo filter</p>
+                            </div>
+                        </div>
+    
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>soft</h4>
+                                <p>Enables or disables the soft filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>speed</h4>
+                                <p>Enables or disables the speed filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>tremolo</h4>
+                                <p>Enables or disables the tremolo filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>vaporwave</h4>
+                                <p>Enables or disables the vaporwave filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="element">
+                            <i class="fas solid fa-diamond"></i>
+                            <div>
+                                <h4>vibrato</h4>
+                                <p>Enables or disables the vibrato filter</p>
+                            </div>
+                        </div>
+                    
+
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>addprevious</h4>
+                                    <p>Add previous song to the queue</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>autoplay</h4>
+                                    <p>Toggle the bot to continuously queue up recommended songs.</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>back</h4>
+                                    <p>Skips to the previous song</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>clear</h4>
+                                    <p>Clear all tracks from the queue and stop the queue</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>disconnect</h4>
+                                    <p>Disconnect from the vc and clears the queue</p>
+                                </div>
+                            </div>
+        
+                    
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>fastforward</h4>
+                                    <p>Fast forward the player by your specified amount; The default is 10 seconds</p>
+                                </div>
+                            </div>
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>join</h4>
+                                    <p>Join the vc</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>jump</h4>
+                                    <p>Skips to the specified track</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>loop</h4>
+                                    <p>Toggles looping the current playing song</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>move</h4>
+                                    <p>Move song!</p>
+                                </div>
+                            </div>
+                        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>pause</h4>
+                                    <p>Pauses the player</p>
+                                </div>
+                            </div>
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>play</h4>
+                                    <p>Play a song in ur voice channel</p>
+                                </div>
+                            </div>
+        
+                             <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>playlist</h4>
+                                    <p>Custom playlist manager!</p>
+                                </div>
+                            </div>
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>playskip</h4>
+                                    <p>Plays a song instantly from spotify, which means skips current track and plays next song</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>playtop</h4>
+                                    <p>Adds a song with the given name/url on the top of the queue</p>
+                                </div>
+                            </div>
+                            
+                             <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>queue</h4>
+                                    <p>Displays the current queue of tracks</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>remove</h4>
+                                    <p>Remove the specified track from the queue</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>removedupes</h4>
+                                    <p>Remove duplicate tracks from the queue</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>replay</h4>
+                                    <p>Playing the current song from the beginning</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i> 
+                                <div>
+                                    <h4>rewind</h4>
+                                    <p>Rewinds the player by your specified amount; The default is 10 seconds</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>seek</h4>
+                                    <p>Skips to the specified timestamp in the currently playing track</p>
+                                </div>
+                            </div>
+        
+                            
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>shuffle</h4>
+                                    <p>Randomizes the current order of tracks in the queue</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>skip</h4>
+                                    <p>Skips to the next song</p>
+                                </div>
+                            </div>
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>stop</h4>
+                                    <p>Clears the queue and stop the current player</p>
+                                </div>
+                            </div>
+        
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>resume</h4>
+                                    <p>Resume the player</p>
+                                </div>
+                            </div>
+        
+        
+        
+                            <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>volume</h4>
+                                    <p>Sets the player's volume</p>
+                                </div>
+                            </div>
+
+
+                                <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>botinfo</h4>
+                                      <p>To know about me</p>
+                                  </div>
+                              </div>
+              
+              
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>help</h4>
+                                      <p>***To show all commands***</p>
+                                  </div>
+                              </div>
+              
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>invite</h4>
+                                      <p>Invite me to ur server!</p>
+                                  </div>
+                              </div>
+              
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>ping</h4>
+                                      <p>Bot settings!</p>
+                                  </div>
+                              </div>
+              
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>settings</h4>
+                                      <p>Bot settings!</p>
+                                  </div>
+                              </div>
+
+
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>24h</h4>
+                                        <p>Enable or disable 24/7 mode!</p>
+                                    </div>
+                                </div>
+            
+            
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>prefix</h4>
+                                        <p>Change prefix for the bot</p>
+                                    </div>
+                                </div>
+            
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>setchannel</h4>
+                                        <p>Set specific text channels for bot commands!</p>
+                                    </div>
+                                </div>
+            
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>setdj</h4>
+                                        <p>Add or remove dj role</p>
+                                    </div>
+                                </div>
+            
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>set-dj</h4>
+                                        <p>Set And Remove dj roles</p>
+                                    </div>
+                                </div>
+            
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>setdjonly</h4>
+                                        <p>Set's a Command to the DJ Only State or non DJ Only State</p>
+                                    </div>
+                                </div>
+            
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>setup</h4>
+                                        <p>Setup a request channel!</p>
+                                    </div>
+                                </div>
+            
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>setvc</h4>
+                                        <p>Set specific voice channels for matchBox!</p>
+                                    </div>
+                                </div>
+            
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>togglemessage</h4>
+                                        <p>The bot will take commands from only setup channel!</p>
+                                    </div>
+                                </div>
+            
+
+
+
+
+                            
+
+                                  <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>dm</h4>
+                                        <p>Dm's a user</p>
+                                    </div>
+                                </div>
+                      
+                      
+                                <div class="element">
+                                    <i class="fas solid fa-diamond"></i>
+                                    <div>
+                                        <h4>eval</h4>
+                                        <p>Eval command</p>
+                                    </div>
+                                </div>
+                      
+                      
+                                <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>getchannel</h4>
+                                      <p>Get info for a channel</p>
+                                  </div>
+                              </div>
+                      
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>getinvite</h4>
+                                      <p>Get a server invite</p>
+                                  </div>
+                              </div>
+                      
+                      
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>getserver</h4>
+                                      <p>Get info for a server</p>
+                                  </div>
+                              </div>
+                      
+                      
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>nodes</h4>
+                                      <p>Node stats</p>
+                                  </div>
+                              </div>
+                      
+                      
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>reload</h4>
+                                      <p>Reload all the commands at a time</p>
+                                  </div>
+                              </div>
+                      
+                      
+                      
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>uptime</h4>
+                                      <p>See the bot's uptime</p>
+                                  </div>
+                              </div>
+                              
+                      
+                      
+                              <div class="element">
+                                  <i class="fas solid fa-diamond"></i>
+                                  <div>
+                                      <h4>user</h4>
+                                      <p>Get info about a user</p>
+                                  </div>
+                              </div>
+
+
+
+
+                              <div class="element">
+                                <i class="fas solid fa-diamond"></i>
+                                <div>
+                                    <h4>premium</h4>
+                                    <p>Manage your premium subscription!</p>
+                                </div>
+                            </div>
+
+
+                  
+                                   <!-- Add more elements as needed -->
+                  
+                    
+                                </div>
+
+
+                <!-- All tab end -->
+
+                
+
+    
+                
+                  <!-- Music tab start -->
+
+                <div class="tab-pane" id="music">
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>addprevious</h4>
+                            <p>Add previous song to the queue</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>autoplay</h4>
+                            <p>Toggle the bot to continuously queue up recommended songs.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>back</h4>
+                            <p>Skips to the previous song</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>clear</h4>
+                            <p>Clear all tracks from the queue and stop the queue</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>disconnect</h4>
+                            <p>Disconnect from the vc and clears the queue</p>
+                        </div>
+                    </div>
+
+            
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>fastforward</h4>
+                            <p>Fast forward the player by your specified amount; The default is 10 seconds</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>join</h4>
+                            <p>Join the vc</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>jump</h4>
+                            <p>Skips to the specified track</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>loop</h4>
+                            <p>Toggles looping the current playing song</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>move</h4>
+                            <p>Move song!</p>
+                        </div>
+                    </div>
+                
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>pause</h4>
+                            <p>Pauses the player</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>play</h4>
+                            <p>Play a song in ur voice channel</p>
+                        </div>
+                    </div>
+
+                     <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>playlist</h4>
+                            <p>Custom playlist manager!</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>playskip</h4>
+                            <p>Plays a song instantly from spotify, which means skips current track and plays next song</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>playtop</h4>
+                            <p>Adds a song with the given name/url on the top of the queue</p>
+                        </div>
+                    </div>
+                    
+                     <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>queue</h4>
+                            <p>Displays the current queue of tracks</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>remove</h4>
+                            <p>Remove the specified track from the queue</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>removedupes</h4>
+                            <p>Remove duplicate tracks from the queue</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>replay</h4>
+                            <p>Playing the current song from the beginning</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i> 
+                        <div>
+                            <h4>rewind</h4>
+                            <p>Rewinds the player by your specified amount; The default is 10 seconds</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>seek</h4>
+                            <p>Skips to the specified timestamp in the currently playing track</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>shuffle</h4>
+                            <p>Randomizes the current order of tracks in the queue</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>skip</h4>
+                            <p>Skips to the next song</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>stop</h4>
+                            <p>Clears the queue and stop the current player</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>resume</h4>
+                            <p>Resume the player</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>volume</h4>
+                            <p>Sets the player's volume</p>
+                        </div>
+                    </div>
+
+
+
+                     <!-- Add more elements as needed -->
+   
+                </div>
+
+                <!-- Music tab end -->
+
+
+
+
+
+
+
+
+                 <!-- Filter tab start -->
+
+                <div class="tab-pane" id="filter">
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>8d</h4>
+                            <p>Enables or disables the 8D filter</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>bassboost</h4>
+                            <p>Enables or disables the BASSBOOST filter</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>china</h4>
+                            <p>Enables or disables the china filter</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>chipmunk</h4>
+                            <p>Enables or disables the chipmunk filter</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>clearfilter</h4>
+                            <p>Clear All filters</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>darthvader</h4>
+                            <p>Enables or disables the darthvader filter</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>karaoke</h4>
+                            <p>Enables or disables the karaoke filter</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>nightcore</h4>
+                            <p>Enables or disables the nightcore filter</p>
+                        </div>
+                    </div>
+
+
+            
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>party</h4>
+                            <p>Enables or disables the party filter</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>pitch</h4>
+                            <p>Enables or disables the pitch filter</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>pop</h4>
+                            <p>Enables or disables the pop filter</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>rate</h4>
+                            <p>Enables or disables the rate filter</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>slowmo</h4>
+                            <p>Enables or disables the slowmo filter</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>soft</h4>
+                            <p>Enables or disables the soft filter</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>speed</h4>
+                            <p>Enables or disables the speed filter</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>tremolo</h4>
+                            <p>Enables or disables the tremolo filter</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>vaporwave</h4>
+                            <p>Enables or disables the vaporwave filter</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>vibrato</h4>
+                            <p>Enables or disables the vibrato filter</p>
+                        </div>
+                    </div>
+                     <!-- Add more elements as needed -->
+
+                </div>
+
+                  <!-- Filter tab end -->
+
+
+
+                  
+                  
+                    
+
+                <!-- Utility tab start -->
+
+                <div class="tab-pane" id="utility">
+                    
+                    
+
+                  <div class="element">
+                    <i class="fas solid fa-diamond"></i>
+                    <div>
+                        <h4>botinfo</h4>
+                        <p>To know about me</p>
+                    </div>
+                </div>
+
+
+                <div class="element">
+                    <i class="fas solid fa-diamond"></i>
+                    <div>
+                        <h4>help</h4>
+                        <p>***To show all commands***</p>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <i class="fas solid fa-diamond"></i>
+                    <div>
+                        <h4>invite</h4>
+                        <p>Invite me to ur server!</p>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <i class="fas solid fa-diamond"></i>
+                    <div>
+                        <h4>ping</h4>
+                        <p>Bot settings!</p>
+                    </div>
+                </div>
+
+                <div class="element">
+                    <i class="fas solid fa-diamond"></i>
+                    <div>
+                        <h4>settings</h4>
+                        <p>Bot settings!</p>
+                    </div>
+                </div>
+
+                 <!-- Add more elements as needed -->
+
+                </div>
+
+                 <!-- Utility tab end -->
+
+
+ 
+
+                <!-- Admin tab start -->
+
+                <div class="tab-pane" id="admin">
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>24h</h4>
+                            <p>Enable or disable 24/7 mode!</p>
+                        </div>
+                    </div>
+
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>prefix</h4>
+                            <p>Change prefix for the bot</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>setchannel</h4>
+                            <p>Set specific text channels for bot commands!</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>setdj</h4>
+                            <p>Add or remove dj role</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>set-dj</h4>
+                            <p>Set And Remove dj roles</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>setdjonly</h4>
+                            <p>Set's a Command to the DJ Only State or non DJ Only State</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>setup</h4>
+                            <p>Setup a request channel!</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>setvc</h4>
+                            <p>Set specific voice channels for matchBox!</p>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <i class="fas solid fa-diamond"></i>
+                        <div>
+                            <h4>togglemessage</h4>
+                            <p>The bot will take commands from only setup channel!</p>
+                        </div>
+                    </div>
+
+
+
+                     <!-- Add more elements as needed -->
+
+                </div>
+                <!-- Admin tab end --> 
+
+
+
+
+
+
+                           
+
+
+
+
+                               
+         <!-- None tab start -->
+
+         <div class="tab-pane" id="nome">
+                    
+                    
+
+            <div class="element">
+              <i class="fas solid fa-diamond"></i>
+              <div>
+                  <h4>dm</h4>
+                  <p>Dm's a user</p>
+              </div>
+          </div>
+
+
+          <div class="element">
+              <i class="fas solid fa-diamond"></i>
+              <div>
+                  <h4>eval</h4>
+                  <p>Eval command</p>
+              </div>
+          </div>
+
+
+          <div class="element">
+            <i class="fas solid fa-diamond"></i>
+            <div>
+                <h4>getchannel</h4>
+                <p>Get info for a channel</p>
+            </div>
+        </div>
+
+        <div class="element">
+            <i class="fas solid fa-diamond"></i>
+            <div>
+                <h4>getinvite</h4>
+                <p>Get a server invite</p>
+            </div>
+        </div>
+
+
+        <div class="element">
+            <i class="fas solid fa-diamond"></i>
+            <div>
+                <h4>getserver</h4>
+                <p>Get info for a server</p>
+            </div>
+        </div>
+
+
+        <div class="element">
+            <i class="fas solid fa-diamond"></i>
+            <div>
+                <h4>nodes</h4>
+                <p>Node stats</p>
+            </div>
+        </div>
+
+
+        <div class="element">
+            <i class="fas solid fa-diamond"></i>
+            <div>
+                <h4>reload</h4>
+                <p>Reload all the commands at a time</p>
+            </div>
+        </div>
+
+
+
+        <div class="element">
+            <i class="fas solid fa-diamond"></i>
+            <div>
+                <h4>uptime</h4>
+                <p>See the bot's uptime</p>
+            </div>
+        </div>
+        
+
+
+        <div class="element">
+            <i class="fas solid fa-diamond"></i>
+            <div>
+                <h4>user</h4>
+                <p>Get info about a user</p>
+            </div>
+        </div>
+        
+        
+           <!-- Add more elements as needed -->
+
+          </div>
+
+           <!-- none tab end -->
+              
+
+
+
+
+           
+
+         <!-- premium tab start -->
+
+         <div class="tab-pane" id="premium">
+                    
+            <div class="element">
+              <i class="fas solid fa-diamond"></i>
+              <div>
+                  <h4>premium</h4>
+                  <p>Manage your premium subscription!</p>
+              </div>
+          </div>
+
+           <!-- Add more elements as needed -->
+
+          </div>
+
+           <!-- Premium tab end -->
+            
+
+            </div>
+
+
+        </div>
+
+
+ <!--  tabs end -->
+
+
+
+
+
+
+
+ <!--  Footer start -->
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+
+                    <h5 class="theme-color">About Us</h5>
+                    <div class="items-center">  <div class="logo">
+                        <a href="index.html"><img height="" width="100px" src="logo.png" alt="Chain App Dev"></a>
+                    </div>
+                     <p>We Care About Music Quality. <br>Your Ultimate Music Bot</p></div>  
+
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h5 class="theme-color">Rules</h5>
+                    <ul>
+                        <li><a href="terms_of_services.html">Service Terms</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="refund_policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6">            
+                    <h5 class="theme-color">Support</h5>
+                    <ul>
+                        <li><a href="#">Supports</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Horizontal bar -->
+        <div class="horizontal-bar"></div>
+
+
+        <!-- Copyright claim -->
+        <div class="copyright">
+            &copy;  Copyright 2024 Matchbox All Rights Reserved.
+        </div>
+    </footer>
+
+<!--  Footer end -->
+
+
+
+
+
+<!--  javascript start -->
+
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+        
+
+        function toggleMenu(){
+
+            var myElement = document.getElementById("icc");
+            var head = document.getElementById("mid");
+        
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+                myElement.classList.remove("fa-bars");
+                myElement.classList.add("fa-x"); 
+                head.style.marginTop='250px'
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+                myElement.classList.remove("fa-x"); 
+                myElement.classList.add("fa-bars"); 
+                head.style.marginTop='30px'
+            }
+
+        
+        }
+        
+
+
+
+
+
+
+
+        function filterTabs() {
+        var input, filter, tabContent, tabPanes, elements, i, j;
+        input = document.querySelector('.search-input');
+        filter = input.value.toUpperCase();
+        tabContent = document.querySelector('.tab-content');
+        tabPanes = tabContent.getElementsByClassName('tab-pane');
+
+        for (i = 0; i < tabPanes.length; i++) {
+            elements = tabPanes[i].getElementsByClassName("element");
+            for (j = 0; j < elements.length; j++) {
+                // Modify the line below to target only the title for search
+                var title = elements[j].getElementsByTagName("h4")[0];
+                if (title.textContent.toUpperCase().indexOf(filter) > -1) {
+                    elements[j].style.display = "";
+                } else {
+                    elements[j].style.display = "none";
+                }
+            }
+        }
+    }
+
+        
+       
+    </script>
+
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding-top:5px ;
+}
+
+.theme-color{
+    color: #499bae;
+}
+
+
+.text-grey-500{
+    --tw-text-opacity: 1;
+color: rgb(255 255 255/var(--tw-text-opacity));
+
+}
+
+
+
+
+
+.text-grey-400{
+    --tw-text-opacity: 1;
+color: rgb(156 163 175/var(--tw-text-opacity));
+
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+   
+}
+
+nav{
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    position: relative;
+    height: 70px;
+
+}
+
+.logo{
+    
+   
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: start;
+    margin-top: -15px;
+}
+
+nav ul li{
+    list-style-type: none;
+    background-color: transparent; /* Similar to text-gray-300 */
+  
+    padding: 8px 15px 8px 15px;
+  border-radius: 5px;
+    
+}
+
+nav ul li:hover{
+    
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+  
+    
+}
+
+
+button{
+    outline: none;
+    border: none;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    --tw-text-opacity: 1;
+    color: rgb(209 213 219/var(--tw-text-opacity));
+    width: 100%;
+    display: block;
+    padding: 0;
+
+
+}
+
+
+nav ul li:hover a{
+    
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81/var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+   
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+    
+}
+
+
+
+.gradient-button {
+    background: #499bae;
+    cursor: pointer;
+    padding: 0.5rem 1rem; 
+    border-radius: 10px; 
+    
+  }
+
+
+
+
+
+  .gradient-button a{
+    text-decoration: none;
+    --tw-text-opacity: 1;
+    color: black;
+    padding: 30px 10px;
+    font-size: 18px;
+   
+  }
+
+
+  .border-secondary {
+    border-color: #cbd2d9; /* Similar to border-blueGray-300 */
+  }
+
+
+
+
+
+
+
+
+   /* Footer styles */
+   footer {
+    background-color:transparent; /* Set your desired background color */
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    
+    
+    margin: auto;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+}
+
+footer .container{
+    width: 80%;
+    
+
+}
+
+
+/* Horizontal bar styles */
+.horizontal-bar {
+    border-top: 2px solid #499bae; /* Set your desired border color */
+    margin: 0px 30px 10px 30px;
+
+
+}
+
+
+
+/* Center the text in the copyright claim */
+.copyright {
+    text-align: center;
+}
+
+
+
+
+footer ul li a{
+    text-decoration: none;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+
+footer ul li{
+   
+    list-style-type: none;
+    margin-left: -32px;
+   
+   
+}
+
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 7px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #499bae; /* Set the color of the thumb */
+    border-radius: 4px; /* Set the border radius of the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #272a2c; /* Set the color of the track */
+}
+
+
+
+
+
+
+
+
+
+
+
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s, outline 0.3s, transform 0.3s, font-size 0.3s;
+    cursor: pointer;
+    position: relative;
+    outline: 2px solid #fff;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+
+
+.box i {
+    margin-bottom: 20px;
+}
+
+.box:hover {
+    background-color: #4d5966;;
+    outline: 2px solid #499bae;
+    transform: scale(1.05);
+    font-size: 1.2em;
+}
+
+
+
+
+
+#mid,#pricing{
+    transition: margin-top 0.5s ease;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .containerr {
+        flex-direction: column;
+                align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        
+    }
+
+
+
+
+    nav .gradient-button{
+display: none;
+
+    } 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Add this to your custom styles or in a style tag */
+
+@media (max-width:800px) {
+
+
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align:left;
+        background: transparent;
+        gap: 0;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+
+   
+  
+
+    nav ul li{
+        padding: 10px;
+        background-color: transparent; /* Similar to text-gray-300 */
+        width: 90%;
+       
+       
+    }
+    
+
+    nav ul li:first-child {
+        margin-top: 30px !important;
+      }
+
+      nav ul li:last-child {
+        margin-bottom: 30px !important;
+      }
+
+
+    .menu-icon{
+        display: block;
+        margin-right: 20px;
+        width: 30px;
+    }
+  
+
+
+    #footer{
+        margin-top: 40px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+

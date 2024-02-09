@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="styles.css">    
+    <link rel="icon" type="image/png" href="logo.png">
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<style>
+
+
+.pricing h2{
+    font-size: 40px;
+    line-height: 48px;
+}
+
+
+
+.pricing-card {
+           
+           border-radius: 3px;
+           
+           
+           text-align: center;
+           background-color: #080811;
+          padding: 40px;
+          margin-bottom: 30px;
+        
+           
+       }
+
+       .pricing-card i {
+           font-size: 3em;
+           margin-bottom: 20px;
+       }
+
+       .pricing-card ul {
+           list-style: none;
+           padding: 0;
+       }
+
+       .pricing-card li {
+           
+           display: flex;
+           justify-content: space-between;
+          align-items: center;
+           margin: 0px ;
+           padding: 0px;
+           margin-bottom: 5px;
+           --tw-text-opacity: 1;
+           color: rgb(156 163 175/var(--tw-text-opacity));
+           
+       }
+
+       .pricing-card li p{
+           margin: 0px;
+           padding: 0px;
+       }
+
+
+       .pricing-card .fas{
+          
+           color: #499bae;
+           margin-right: 10px;
+
+       }
+
+       .pricing-card .fa-circle-xmark{
+        color: red;
+
+       }
+
+       .pricing-card li i{
+           font-size: 15px;
+           padding: 0px;
+           margin: 0px;
+           color: #499bae;
+       }
+
+       .pricing-card {
+   min-width: 250px; /* Set your desired minimum width */
+   /* Add any other styles as needed */
+}
+
+
+.pricing-card h3{
+   font-weight: 700;
+}
+
+
+.pricing-card a{
+   text-decoration: none;
+   background-color:#499bae ;
+   color: #14141D;
+   border-radius: 15px;
+   margin: 10px;
+   padding: 15px;
+   font-size: 14px;
+   font-weight: 600;
+
+}
+
+.pricing-card a:hover{
+   background-color: #499bae;
+   outline:2px solid white;
+  
+}
+
+
+.price{
+   --tw-text-opacity: 1;
+color: rgb(255 255 255/var(--tw-text-opacity));
+font-weight: bold;
+}
+
+.pt-price-sign {
+   font-size: 36px; /* Adjust the size according to your design */
+   
+}
+
+.pt-price {
+   font-size: 36px; /* Adjust the size according to your design */
+}
+
+.price-month {
+   font-size: 14px; /* Adjust the size according to your design */
+}
+
+
+.pt-zero{
+   font-size:18px ;
+}
+
+
+
+#tgl .btn{
+   
+   width: 150px;
+   border-radius: 0px;
+   border-collapse: collapse;
+   
+font-weight: bold;
+}
+
+
+#tgl .btn:focus{
+   border-radius: 0px;
+  box-shadow: none;
+ 
+}
+
+.btn.active {
+   background-color:  #499bae; /* Set your desired active background color */
+   color: #14141D !important;
+   outline: none;
+}
+
+
+
+#primeBtn{
+   border: 10px solid #14141D;
+border-right-width: 5px;
+outline: 4px solid #499bae;
+--tw-text-opacity: 1;
+           color: rgb(156 163 175/var(--tw-text-opacity));
+           
+
+   
+}
+
+#customBtn{
+   border: 10px solid #14141D;
+border-left-width: 5px;
+outline: 4px solid #499bae;
+--tw-text-opacity: 1;
+           color: rgb(156 163 175/var(--tw-text-opacity));
+
+
+   
+}
+
+
+
+#primeCards, #customCards{
+
+   transition: opacity 0.2s ease-in-out;
+   width: 80%;
+   margin: auto;
+}
+
+
+.hrl {
+    border-top: 2px solid #499bae;
+}
+
+
+
+
+#pricing h2{
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 1200px) {
+   
+
+   #primeCards,#customCards{
+
+
+width: 90%;
+
+}
+}
+
+
+
+
+
+@media (max-width: 748px) {
+   
+
+    #primeCards,#customCards{
+
+
+width: 100%;
+
+}
+
+.pricing-card {
+           
+         
+          padding: 15px;
+         
+        
+           
+       }
+
+
+
+
+}
+
+
+
+
+
+</style>
+
+
+</head>
+<body style="background-color: #191A1E"">
+    <nav >
+
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" id="icc" onclick="toggleMenu()"></i>
+        </div>
+
+        <div class="logo">
+            <a href="index.html"><img height="" width="100px" src="logo.png" alt="Chain App Dev"></a>
+        </div>
+        <ul id="menuList">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">INVITE</a></li>
+            <li><a href="pricingg.html">PREMIUM</a></li>
+            <li><a href="commands.html">COMMANDS</a></li>
+            <li><a href="contact.html">SUPPORT</a></li>
+        </ul>
+
+        <button class="gradient-button"><a href="">Get Started</a></button>
+       
+    </nav>
+    <div class="horizontal-bar mt-2"></div>
+
+
+    
+
+   <div id="pricing" > 
+    <section class="container pricing mt-4 mb-4" >
+        <h2 class="pt-section-main-title text-grey-500 text-center">Check out our  new <span class="last-word"> pricing plans!</span></h2>
+    </section>
+</div>
+
+
+    <div class="container">
+    
+        <div class="d-flex justify-content-center" id="tgl">
+            <button class="btn active" id="primeBtn" onclick="showPricing('prime')">Prime</button>
+            <button class="btn" id="customBtn" onclick="showPricing('custom')">Custom Bot</button>
+        </div>
+    
+        <div class="row mt-4 " id="primeCards">
+            <!-- Prime Plan Pricing Cards -->
+            <div class="col-md-6">
+                <div class="pricing-card">
+                    <div class="d-flex align-items-center justify-content-center  ">
+                        <i class="fas fa-cogs mb-3"></i>
+                        <div class="">
+                            <h3 class="text-grey-500">General</h3>
+                            <p class="text-grey-400">1 entire server</p>
+                        </div>
+                    </div>
+                    
+    
+    
+                    <ul>
+    
+    
+                        <li>
+                            <p>Get access of MatchBox 2</p>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+                        <li>
+                            <p>Get access of MatchBox 3</p>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get access of MatchBox 4</p>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+    
+                        <li>
+                            <p>Bypass Vote Require Commands</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Bypass Cooldown System</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>24/7 stay in voice channel!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Autoplay command!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited queue length!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited Youtube Links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited spotify links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Share your custom playlist</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        
+                        <li>
+                            <p>Audio filters!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Custom role in our discord server!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat directly to the developers!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get support as soon as possible</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Private community</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>NO VOTE REQUIRED</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Discord access</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                    </ul>
+                    <hr class="hrl">
+    
+                    <h2 class="price">
+                        <span class="pt-price-sign">$</span>
+                        <span class="pt-price">1.<span class="pt-zero"> 99 /</span> 
+                          
+                        <span class="price-month">Month</span>
+                        
+                    </h2>
+    
+                    <a href="#" class="btn btn-primary">Get Started</a>
+    
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="pricing-card">
+                    <div class="d-flex align-items-center justify-content-center  ">
+                        <i class="fas fa-cogs mb-3"></i>
+                        <div class="">
+                            <h3 class="text-grey-500 smallf">Lieutenant</h3>
+                            <p class="text-grey-400">1 entire server</p>
+                        </div>
+                    </div>
+                    
+    
+    
+                    <ul>
+    
+    
+                        <li>
+                            <p>Get access of MatchBox 2</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Get access of MatchBox 3</p>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get access of MatchBox 4</p>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+    
+                        <li>
+                            <p>Bypass Vote Require Commands</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Bypass Cooldown System</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>24/7 stay in voice channel!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Autoplay command!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited queue length!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited Youtube Links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited spotify links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Share your custom playlist</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        
+                        <li>
+                            <p>Audio filters!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Custom role in our discord server!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat directly to the developers!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get support as soon as possible</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Private community</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>NO VOTE REQUIRED</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Discord access</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                    </ul>
+                    <hr class="hrl">
+    
+                    <h2 class="price">
+                        <span class="pt-price-sign">$</span>
+                        <span class="pt-price">2.<span class="pt-zero"> 99 /</span> 
+                          
+                        <span class="price-month">Month</span>
+                        
+                    </h2>
+    
+                    <a href="#" class="btn btn-primary">Get Started</a>
+    
+                </div>
+            </div>
+    
+            <div class="col-md-6">
+                <div class="pricing-card">
+                    <div class="d-flex align-items-center justify-content-center  ">
+                        <i class="fas fa-cogs mb-3"></i>
+                        <div class="">
+                            <h3 class="text-grey-500">Major</h3>
+                            <p class="text-grey-400">3 entire server</p>
+                        </div>
+                    </div>
+                    
+    
+    
+                    <ul>
+    
+    
+                        <li>
+                            <p>Get access of MatchBox 2</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Get access of MatchBox 3</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get access of MatchBox 4</p>
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </li>
+    
+                        <li>
+                            <p>Bypass Vote Require Commands</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Bypass Cooldown System</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>24/7 stay in voice channel!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Autoplay command!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited queue length!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited Youtube Links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited spotify links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Share your custom playlist</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        
+                        <li>
+                            <p>Audio filters!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Custom role in our discord server!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat directly to the developers!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get support as soon as possible</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Private community</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>NO VOTE REQUIRED</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Discord access</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                    </ul>
+                    <hr class="hrl">
+    
+                    <h2 class="price">
+                        <span class="pt-price-sign">$</span>
+                        <span class="pt-price">3.<span class="pt-zero"> 99 /</span> 
+                          
+                        <span class="price-month">Month</span>
+                        
+                    </h2>
+    
+                    <a href="#" class="btn btn-primary">Get Started</a>
+    
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="pricing-card">
+                    <div class="d-flex align-items-center justify-content-center  ">
+                        <i class="fas fa-cogs mb-3"></i>
+                        <div class="">
+                            <h3 class="text-grey-500">Captain</h3>
+                            <p class="text-grey-400">5 entire server</p>
+                        </div>
+                    </div>
+                    
+    
+    
+                    <ul>
+    
+    
+                        <li>
+                            <p>Get access of MatchBox 2</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Get access of MatchBox 3</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get access of MatchBox 4</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Bypass Vote Require Commands</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Bypass Cooldown System</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>24/7 stay in voice channel!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Autoplay command!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited queue length!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited Youtube Links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited spotify links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Share your custom playlist</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        
+                        <li>
+                            <p>Audio filters!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Custom role in our discord server!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat directly to the developers!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get support as soon as possible</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Private community</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>NO VOTE REQUIRED</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Discord access</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        
+    
+                    </ul>
+                    <hr class="hrl">
+    
+                    <h2 class="price">
+                        <span class="pt-price-sign">$</span>
+                        <span class="pt-price">4.<span class="pt-zero"> 99 /</span> 
+                          
+                        <span class="price-month">Month</span>
+                        
+                    </h2>
+    
+                    <a href="#" class="btn btn-primary">Get Started</a>
+    
+                </div>
+            </div>
+    
+    
+        </div>
+    
+    
+    
+    
+    
+    
+        <div class="row mt-4 d-none" id="customCards">
+            <!-- Custom Bot Plan Pricing Cards -->
+            
+    
+            <div class="col-md-6">
+                <div class="pricing-card">
+                    <div class="d-flex align-items-center justify-content-center  ">
+                        <i class="fas fa-cogs mb-3"></i>
+                        <div class="">
+                            <h3 class="text-grey-500">Corporal</h3>
+                            <p class="text-grey-400">Custom bot x1</p>
+                        </div>
+                    </div>
+                    
+    
+    
+                    <ul>
+    
+    
+                        <li>
+                            <p>Get 1 custom premium bot</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Get access of MatchBox 2</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Get access of MatchBox 3</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get access of MatchBox 4</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Bypass Vote Require Commands</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Bypass Cooldown System</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>24/7 stay in voice channel!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Autoplay command!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited queue length!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited Youtube Links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited spotify links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Share your custom playlist</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        
+                        <li>
+                            <p>Audio filters!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Custom role in our discord server!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat directly to the developers!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get support as soon as possible</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Private community</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>NO VOTE REQUIRED</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Discord access</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                    </ul>
+                    <hr class="hrl">
+    
+                    <h2 class="price">
+                        <span class="pt-price-sign">$</span>
+                        <span class="pt-price">6.<span class="pt-zero"> 99 /</span> 
+                          
+                        <span class="price-month">Month</span>
+                        
+                    </h2>
+    
+                    <a href="#" class="btn btn-primary">Get Started</a>
+    
+                </div>
+            </div>
+    
+    
+            <div class="col-md-6">
+                <div class="pricing-card">
+                    <div class="d-flex align-items-center justify-content-center  ">
+                        <i class="fas fa-cogs mb-3"></i>
+                        <div class="">
+                            <h3 class="text-grey-500">Sainik</h3>
+                            <p class="text-grey-400">Custom bot x2</p>
+                        </div>
+                    </div>
+                    
+    
+    
+                    <ul>
+    
+    
+                        <li>
+                            <p>Get 2 custom premium bot</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Get access of MatchBox 2</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Get access of MatchBox 3</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get access of MatchBox 4</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Bypass Vote Require Commands</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Bypass Cooldown System</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>24/7 stay in voice channel!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Autoplay command!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited queue length!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited Youtube Links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Unlimited spotify links!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        <li>
+                            <p>Share your custom playlist</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+                        
+                        <li>
+                            <p>Audio filters!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Custom role in our discord server!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat directly to the developers!</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Get support as soon as possible</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Live chat</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Private community</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>NO VOTE REQUIRED</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                        <li>
+                            <p>Discord access</p>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </li>
+    
+                    </ul>
+                    <hr class="hrl">
+    
+                    <h2 class="price">
+                        <span class="pt-price-sign">$</span>
+                        <span class="pt-price">9.<span class="pt-zero"> 99 /</span> 
+                          
+                        <span class="price-month">Month</span>
+                        
+                    </h2>
+    
+                    <a href="#" class="btn btn-primary">Get Started</a>
+    
+                </div>
+            </div>
+            
+    
+        </div>
+    </div>
+
+
+
+    <!--  Footer start -->
+
+    <footer>
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+
+                    <h5 class="theme-color">About Us</h5>
+                    <div class="items-center">  <div class="logo">
+                        <a href="index.html"><img height="" width="100px" src="logo.png" alt="Chain App Dev"></a>
+                    </div>
+                     <p>We Care About Music Quality. <br>Your Ultimate Music Bot</p></div>  
+
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <h5 class="theme-color">Rules</h5>
+                    <ul>
+                        <li><a href="terms_of_services.html">Service Terms</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="refund_policy.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-6">            
+                    <h5 class="theme-color">Support</h5>
+                    <ul>
+                        <li><a href="#">Supports</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Horizontal bar -->
+        <div class="horizontal-bar"></div>
+
+
+        <!-- Copyright claim -->
+        <div class="copyright">
+            &copy;  Copyright 2024 Matchbox All Rights Reserved.
+        </div>
+    </footer>
+
+
+<!--  Footer end -->
+
+
+
+
+    <script>
+
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+
+            var myElement = document.getElementById("icc");
+            var element = document.getElementById('pricing');
+
+
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+                myElement.classList.remove("fa-bars");  // Remove the original class
+                myElement.classList.add("fa-x"); 
+                // Change the top margin to 20 pixels
+                element.style.marginTop = '240px';
+
+            }
+            else{
+
+                menuList.style.maxHeight = "0px";
+                myElement.classList.remove("fa-x");  // Remove the original class
+                myElement.classList.add("fa-bars"); 
+                element.style.marginTop = '0px';
+
+            }
+
+        
+        }
+
+
+
+        function showPricing(plan) {
+        document.getElementById('primeBtn').classList.remove('active');
+    document.getElementById('customBtn').classList.remove('active');
+        if (plan === 'prime') {
+            setTimeout(() => {
+                document.getElementById('primeCards').classList.remove('d-none');
+    }, 300);
+            
+            document.getElementById('customCards').classList.add('d-none');
+            
+        } else {
+            setTimeout(() => {
+                document.getElementById('customCards').classList.remove('d-none');
+    }, 300);
+           
+            document.getElementById('primeCards').classList.add('d-none');
+        }
+          // Remove 'active' class from all buttons
+    
+
+    // Add 'active' class to the clicked button
+    document.getElementById(plan + 'Btn').classList.add('active');
+    }
+           
+    </script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</body>
+</html>
